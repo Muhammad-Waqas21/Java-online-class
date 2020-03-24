@@ -3,11 +3,9 @@ try{
         FileWriter fw=new FileWriter(f,true);
         BufferedWriter bw=new BufferedWriter(fw);
         
-        bw.write("iqra mukhtar");
+        bw.write("salam");
         bw.newLine();
-        bw.write("rida khan");
-        bw.newLine();
-        bw.write("ruqia rashed");
+       
         
         bw.close();
        }
