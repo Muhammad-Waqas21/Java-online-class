@@ -1,0 +1,17 @@
+try{
+        File f=new File("File_path");//give your file location with name and extension
+        FileWriter fw=new FileWriter(f,true);
+        BufferedWriter bw=new BufferedWriter(fw);
+        
+        bw.write("iqra mukhtar");
+        bw.newLine();
+        bw.write("rida khan");
+        bw.newLine();
+        bw.write("ruqia rashed");
+        
+        bw.close();
+       }
+       catch(Exception ex){
+           System.out.println("error is: "+ex.getMessage());
+       }
+       

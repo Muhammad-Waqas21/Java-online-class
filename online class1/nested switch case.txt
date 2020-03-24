@@ -1,0 +1,29 @@
+int a=10;
+       switch(a){
+           case 10:{
+                                    String b="20";
+                                    switch(b){
+                                        case "10":{
+                                            System.out.println(" second switch first case ");
+                                            break;
+                                        }
+                                        case "20":{
+                                            System.out.println(" second switch second case ");
+                                            break;
+                                        }
+                                        default:{
+                                            System.out.println(" second switch default");
+                                        }
+                                    }
+                         
+               break;
+           }
+           case 20:{
+               System.out.println("xyz");
+               break;
+           }
+           default:{
+               System.out.println("default");
+           }
+           
+       }

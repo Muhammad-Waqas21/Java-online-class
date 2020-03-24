@@ -1,0 +1,15 @@
+ int a=10;
+       switch(a){
+           case 10:{
+               System.out.println("abc");
+               break;
+           }
+           case 20:{
+               System.out.println("xyz");
+               break;
+           }
+           default:{
+               System.out.println("default");
+           }
+           
+       }
