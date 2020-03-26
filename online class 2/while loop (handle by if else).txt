@@ -1,0 +1,11 @@
+int i=0;
+while(true){
+    if(i<10){
+        System.out.println("value of i = "+i);
+    i++;
+    }
+    else{
+        break;
+    }
+    
+}

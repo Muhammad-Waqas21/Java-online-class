@@ -1,0 +1,21 @@
+try{
+        File f=new File("C:\\online_class_2.txt");//give your file location with name and extension
+        FileReader fw=new FileReader(f);
+        BufferedReader br=new BufferedReader(fw);
+        for(;;){
+//       while(true){
+           String readData=br.readLine();
+           if(readData==null){
+               break;
+           }
+           System.out.println(readData);
+       }
+       
+        
+       br.close();
+        
+       
+       }
+       catch(Exception ex){
+           System.out.println("error is: "+ex.getMessage());
+       }

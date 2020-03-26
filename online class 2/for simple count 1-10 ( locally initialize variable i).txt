@@ -1,0 +1,3 @@
+for(int i=1;i<=10;i+=1){ // u may use i++ or i=i+1 also
+    System.out.println("i ki value= "+i);
+}

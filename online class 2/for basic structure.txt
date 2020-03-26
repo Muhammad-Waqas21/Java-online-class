@@ -1,0 +1,3 @@
+ for(initialize;condition;increament){
+      
+  }
