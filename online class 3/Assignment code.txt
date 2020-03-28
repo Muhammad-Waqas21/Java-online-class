@@ -1,0 +1,89 @@
+Scanner sc = new Scanner(System.in);
+        System.out.println("enter number");
+        int user_number = sc.nextInt();
+
+        try {
+            File f = new File("C:\\testing.txt");//give your file location with name and extension
+            FileWriter fw = new FileWriter(f);
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            for (int i = 0; i < user_number; i++) {
+                System.out.println("enter word= " + (i + 1));
+                if (i == 0) {
+                    String abc = sc.nextLine();
+                    abc = sc.nextLine();
+                    bw.write(abc);
+                    bw.newLine();
+
+                } else {
+                    String abc = sc.nextLine();
+                    bw.write(abc);
+                    bw.newLine();
+                }
+
+            }
+
+            bw.close();
+
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+//       user input=5   0---4
+        Random r = new Random();
+        int random = r.nextInt(user_number);
+//       random++;
+        System.out.println("randon number====" + random);
+        System.out.println("=============================read data==========================");
+        try {
+
+            File f = new File("C:\\testing.txt");//give your file location with name and extension
+            FileReader fw = new FileReader(f);
+            BufferedReader br = new BufferedReader(fw);
+            int count = 0;
+            String data;
+            while (true) {
+
+                data = br.readLine();
+                if (data == null) {
+                    break;
+                }
+                if (count == random) {
+                    break;
+                }
+                count++;
+            }
+
+            System.out.println("data me ye aaya tha = " + data);
+            ///ascii code wala kamm
+            for (int i = 0; i < data.length(); i++) {
+                System.out.println((int) data.charAt(i));
+            }
+            //vowel wala kaam
+            int count_vowels = 0;
+            String data_ignore = data.toLowerCase();
+            for (int i = 0; i < data_ignore.length(); i++) {
+
+                char ch = data_ignore.charAt(i);
+                if (ch == 'a' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'e') {
+                    System.out.println("vovwel character = " + ch);
+                    count_vowels++;
+                }
+
+            }
+            System.out.println("no of vowels = " + count_vowels);
+            String result_last = "";
+            for (int i = 0; i < data.length(); i++) {
+                if (i % 2 == 0) {
+                    result_last = result_last + (("" + data.charAt(i)).toUpperCase());
+                } else {
+                    result_last = result_last + (("" + data.charAt(i)).toLowerCase());
+                }
+
+            }
+            System.out.println(result_last);
+
+            br.close();
+
+        } catch (Exception ex) {
+
+        }

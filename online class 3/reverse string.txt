@@ -1,0 +1,8 @@
+ System.out.println("enter word:");
+        Scanner sc = new Scanner(System.in);
+        String abc=sc.next();
+        String result="";
+        for (int i = (abc.length()-1); i>=0; i--) {
+            result=result+abc.charAt(i);
+        }
+        System.out.println(result);
