@@ -1,0 +1,9 @@
+     Scanner sc=new Scanner(System.in);
+        String user_unput="";
+    do{
+        System.out.println("do you want to play again if yes press y or if not press n");
+        user_unput=sc.next();
+        
+    }
+    while(user_unput.equalsIgnoreCase("y"));
+    }

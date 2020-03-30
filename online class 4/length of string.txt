@@ -1,0 +1,14 @@
+ String abc="waqas";
+    int waqas=0;
+       
+        for (; ;) {
+          try{  
+        char ch=  abc.charAt(waqas) ;
+            
+        waqas++;
+          }
+          catch(Exception ac){
+              break;
+          }
+        }
+        System.out.println(waqas);

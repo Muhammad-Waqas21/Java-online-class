@@ -1,0 +1,24 @@
+  Scanner sc=new Scanner(System.in);
+        
+     String abc=sc.nextLine();
+     String result="";
+      
+     for(int i=0,j=2;i<abc.length();i=i+2,j=j+2)
+     {
+     if(j>abc.length()){
+         String abc1=abc.substring(i);
+         
+           result=result+abc1.charAt(0);
+     }
+     else{
+         String abc1=abc.substring(i,j);
+         result=result+abc1.charAt(1);
+           result=result+abc1.charAt(0)+"  ";
+     }
+         
+        
+        
+        
+     }
+        System.out.println(result);
+        
