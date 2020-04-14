@@ -1,0 +1,17 @@
+  int i=123456789;
+        int sum=0;
+        for(;;){
+            if(i==0){
+                break;
+            }
+            int num=i%10;
+            i=i-num;
+            i=i/10;
+            sum=sum+num;
+            
+            
+        }
+               
+        
+        System.out.println(sum);
+ 

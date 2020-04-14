@@ -1,0 +1,19 @@
+ int i=153;
+        int copy_of_i=i;
+        int sum=0;
+        for(;;){
+            if(i==0){
+                break;
+            }
+            int num=i%10;
+            i=i-num;
+            i=i/10;
+           sum=sum+(num*num*num);
+            
+            
+        }
+               
+        if(sum==copy_of_i){
+            System.out.println("armstrong");
+        }
+       

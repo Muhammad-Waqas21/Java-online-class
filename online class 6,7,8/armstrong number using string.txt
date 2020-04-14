@@ -1,0 +1,23 @@
+    
+     String abc="153";
+     int result=0;
+        for (int i = 0; i < abc.length(); i++) 
+        {
+        char ch=abc.charAt(i);
+        String abc1=Character.toString(ch);
+        int num=Integer.parseInt(abc1);
+        int res=num*num*num;
+        result=result+res;
+            
+        
+        
+            //System.out.println(Math.pow(num,3));
+            
+            
+        }
+        
+        
+        if(Integer.toString(result).equals(abc)){
+            System.out.println("armstrong number = "+abc);
+        }
+        

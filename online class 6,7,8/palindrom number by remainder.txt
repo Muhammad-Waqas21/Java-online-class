@@ -1,0 +1,21 @@
+   int i=1001;
+        int copy_of_i=i;
+        int sum=0;
+        String result="";
+        for(;;){
+            if(i==0){
+                break;
+            }
+            int num=i%10;
+            i=i-num;
+            i=i/10;
+           result=result+num;
+            
+            
+        }
+        if(Integer.parseInt(result)==copy_of_i){
+            System.out.println("palindrom");
+        }
+               
+        
+       
