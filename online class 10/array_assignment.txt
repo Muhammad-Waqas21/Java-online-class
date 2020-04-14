@@ -1,0 +1,48 @@
+  String again_use;
+      do{
+        System.out.print("Enter your number : ");
+       int data=new Scanner(System.in).nextInt();
+      
+        System.out.println("----"+data);
+       int copy_data=data;
+       int size_of_array=0;
+        for (; ; ) {
+            if(data==0){
+                break;
+            }
+            int rem=data%10;
+            data=data-rem;
+            data=data/10;
+          size_of_array++;
+        }
+        if(size_of_array%2==0 && size_of_array!=0 ){
+            
+        
+     int[] array=new int[size_of_array];
+     int index=0;
+        for (; ; ) {
+            if(copy_data==0){
+                break;
+            }
+            int rem=copy_data%10;
+          copy_data=copy_data-rem;
+            copy_data=copy_data/10;
+         array[index]=rem;
+         index++;
+        }
+      int[] output=new int[size_of_array/2];
+        for (int i = 0,waqas=array.length-1; i <output.length ; i++,waqas--) {
+          output[i]=array[i]+array[waqas];
+        }
+        System.out.println("Output here : "+Arrays.toString(output));
+       
+        }
+        else{
+            System.out.println("enter even no of digits");
+        }
+          System.out.println("do u want to use it again?? if yes press y either press anyother key");
+          again_use=new Scanner(System.in).next();
+      }while(again_use.equalsIgnoreCase("y"));
+        
+              
+        
