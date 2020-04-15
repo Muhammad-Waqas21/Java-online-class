@@ -1,0 +1,9 @@
+ int[] abc=new int[10];
+     abc[1]=1;
+        
+        for (int i = 2; i < abc.length; i++) {
+            abc[i]=abc[i-2]+abc[i-1];
+
+          
+        }
+        System.out.println(Arrays.toString(abc));
