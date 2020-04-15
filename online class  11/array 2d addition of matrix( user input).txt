@@ -1,0 +1,38 @@
+ Scanner sc=new Scanner(System.in);
+        System.out.print("Entre no of rows: ");
+      int rows=sc.nextInt();
+      System.out.print("Entre no of columns: ");
+      int columns=sc.nextInt();
+        int[][] matrix1 =new int[rows][columns];
+        int[][] matrix2 = new int[rows][columns];
+        int[][] output = new int[rows][columns];
+        ////user input matrix_1 value
+        System.out.println("for matrix 1");
+           for (int row = 0; row < matrix1.length; row++) {
+
+            for (int j = 0; j < matrix1[row].length; j++) {
+                System.out.print("enter row = "+(row+1)+" column = "+(j+1)+"----");
+              matrix1[row][j]=sc.nextInt();
+            }
+        }
+                   System.out.println("\n\nfor matrix 2");
+
+         for (int row = 0; row < matrix1.length; row++) {
+
+            for (int j = 0; j < matrix1[row].length; j++) {
+                System.out.print("enter row = "+(row+1)+" column = "+(j+1)+"----");
+              matrix2[row][j]=sc.nextInt();
+            }
+        }
+        
+//        
+System.out.println("\n\nresultant matrix here:");
+        for (int row = 0; row < matrix1.length; row++) {
+
+            for (int j = 0; j < matrix1[row].length; j++) {
+                output[row][j] = matrix1[row][j] + matrix2[row][j];
+            }
+        }
+        for (int i = 0; i < output.length; i++) {
+            System.out.println(Arrays.toString(output[i]));
+        }
